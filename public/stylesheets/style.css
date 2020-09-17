@@ -1,0 +1,35 @@
+body {
+    height: auto;
+}
+
+i.icon {
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.rounded.image {
+    margin-bottom: 2em;
+}
+
+.main.container {
+    margin-top: 5em;
+}
+
+.ui.segment.item {
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    margin: 1rem 0;
+    padding: 1em;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.ui.segment.item img {
+    min-height: 100% !important;
+    min-width: 100% !important;
+    object-fit: cover;
+}

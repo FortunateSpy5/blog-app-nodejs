@@ -1,8 +1,48 @@
 <%- include('partials/header.ejs') %>
 
+<div class="ui main text container">
 
+    <div class="ui huge header centered">All Blogs</div>
 
+    <div class="ui items">
 
+        <% blogs.forEach((blog) => { %>
+        
+        <div class="ui item segment">
 
+            <div class="image">
+                <img src="<%= blog.image %> ">
+            </div>
+
+            <div class="content">
+
+                <a class="header" href="/blogs/<%= blog._id %>">
+                    <%= blog.title %>
+                </a>
+
+                <div class="meta">
+                    <span><%= blog.created.toDateString() %></span>
+                </div>
+
+                <div class="description">
+                    <p>
+                        <%= blog.body.substring(0, 100) %>
+                        <% if (blog.body.length > 100) { %>
+                        <span>...</span>
+                        <% } %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <% }); %>
+    </div>
+
+</div>
 
 <%- include('partials/footer.ejs') %>
+
+
+<div class="item">
+    
+    
