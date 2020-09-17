@@ -1,0 +1,25 @@
+{
+  "name": "blog-app-nodejs",
+  "version": "1.0.0",
+  "description": "Blog Website using Node.js, Express, MongoDB, Semantic UI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FortunateSpy5/blog-app-nodejs.git"
+  },
+  "author": "Soumotanu Mazumdar (FortunateSpy5)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/FortunateSpy5/blog-app-nodejs/issues"
+  },
+  "homepage": "https://github.com/FortunateSpy5/blog-app-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.5"
+  }
+}
